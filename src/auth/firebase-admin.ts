@@ -16,5 +16,4 @@ const firebase_params = {
 
 export default admin.initializeApp({
   credential: admin.credential.cert(firebase_params),
-  // databaseURL: "https://fir-auth-bd895.firebaseio.com"
 });

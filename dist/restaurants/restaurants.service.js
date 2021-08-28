@@ -12,9 +12,6 @@ const uuid_1 = require("uuid");
 const firebase_admin_1 = require("../auth/firebase-admin");
 const db = firebase_admin_1.default.firestore();
 let RestaurantsService = class RestaurantsService {
-    constructor() {
-        this.restaurants = [];
-    }
     async createRestaurant(createRestaurantData) {
         const restaurant = Object.assign({ restaurantId: uuid_1.v4() }, createRestaurantData);
         try {

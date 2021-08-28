@@ -12,7 +12,6 @@ const db = admin.firestore();
 
 @Injectable()
 export class RestaurantsService {
-  private restaurants: Restaurant[] = [];
 
   public async createRestaurant(
     createRestaurantData: CreateRestaurantInput,

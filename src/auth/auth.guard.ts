@@ -9,7 +9,6 @@ import { GqlExecutionContext } from '@nestjs/graphql';
 
 import admin from './firebase-admin'
 
-
 @Injectable()
 export class AuthGuard implements CanActivate {
   private defaultApp: any;
