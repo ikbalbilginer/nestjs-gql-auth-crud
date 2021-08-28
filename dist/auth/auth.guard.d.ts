@@ -1,0 +1,7 @@
+import { CanActivate, ExecutionContext } from '@nestjs/common';
+export declare class AuthGuard implements CanActivate {
+    private defaultApp;
+    constructor();
+    canActivate(context: ExecutionContext): Promise<boolean>;
+    validateToken(auth: string): Promise<void>;
+}
